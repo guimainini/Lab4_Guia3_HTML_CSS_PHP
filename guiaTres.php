@@ -60,6 +60,7 @@ echo "<br><br><br>";
 echo "Ejercicio 3<br><br>";
 echo "<br>";
 
+
 /* $primerNumero = 4;
 $segundoNumero = 5; */
 
@@ -99,6 +100,7 @@ echo $arreglin;
 ///////////////////////////////////////////////////////
 echo "<br><br><br>";
 echo "Ejercicio 5<br><br>";
+echo "<br>";
 echo "<br>";
 
 
