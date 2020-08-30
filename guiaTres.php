@@ -238,9 +238,6 @@ sort($arreglin);
 echo "El mayor de todos es : ".$arreglin[array_key_last ($arreglin)];
 
 
-$arreglin = array($a,$b,$c,$d);
-sort($arreglin);
-echo "El mayor de todos es : ".$arreglin[array_key_last ($arreglin)];
 
 
 
