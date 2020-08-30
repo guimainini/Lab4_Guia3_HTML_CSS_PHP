@@ -103,8 +103,6 @@ echo "Ejercicio 5<br><br>";
 echo "<br>";
 echo "<br>";
 
-<<<<<<< HEAD
-=======
 $people = [ 
     ['name' => 'Martin', 'age' => 18, 'sex' => 'm'], 
     ['name' => 'Martina', 'age' => 25, 'sex' => 'f'], 
@@ -143,7 +141,6 @@ foreach($people as $gentuza){
 
 echo "<br>La cantidad de mayores de edad son : $contadorEdad";
 echo "<br>La cantidad de Mujeres Menores es : $contadorMujeresMenores"; 
->>>>>>> guille
 
 echo var_dump($arregloEdades);
 
