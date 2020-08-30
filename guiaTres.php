@@ -103,14 +103,81 @@ echo "Ejercicio 5<br><br>";
 echo "<br>";
 echo "<br>";
 
+$people = [ 
+    ['name' => 'Martin', 'age' => 18, 'sex' => 'm'], 
+    ['name' => 'Martina', 'age' => 25, 'sex' => 'f'], 
+    ['name' => 'Pablo', 'age' => 27, 'sex' => 'm'], 
+    ['name' => 'Paula', 'age' => 12, 'sex' => 'f'], 
+    ['name' => 'Alexis', 'age' => 8, 'sex' => 'm'], 
+    ['name' => 'Jacinta', 'age' => 33, 'sex' => 'f'], 
+    ['name' => 'Epifania', 'age' => 45, 'sex' => 'f'], 
+];
+
+
+foreach($people as $gentuza) {
+    echo "Nombre -> ".$gentuza['name'].", Genero -> ".$gentuza['sex'].", Edad -> ".$gentuza['age']." <br>";
+}
+
+/* a.	Imprima por pantalla el total de mayores de edad.
+b.	De mujeres menores de edad. 
+c.	Cree una web que muestre una tabla con esos datos. 
+d.	Redúzcalo hasta obtener un arreglo de edades únicamente.
+ */
+$contadorEdad = 0;
+$contadorMujeresMenores = 0;
+
+$arregloEdades = array();
+
+foreach($people as $gentuza){
+    if($gentuza['age'] >= 18){
+        $contadorEdad++;
+    }
+    if($gentuza['age'] <= 18 && $gentuza['sex'] == 'f'){
+        $contadorMujeresMenores++;
+    }
+
+    array_push($arregloEdades,$gentuza['age']); //mete dentro de un arreglo lo que yo quiera
+} 
+
+echo "<br>La cantidad de mayores de edad son : $contadorEdad";
+echo "<br>La cantidad de Mujeres Menores es : $contadorMujeresMenores"; 
+
+echo var_dump($arregloEdades);
+
+
+
+
+
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+echo "<br><br><br>";
+echo "Ejercicio 6<br><br>";
+echo "<br>";
 echo "<br>";
 
+$diaDeLaSemana = date('D');
 
+echo $diaDeLaSemana."<br>";
 
+if ( $diaDeLaSemana == 'Mon' ) {
+    echo 'Lunes';
+} else if ( $diaDeLaSemana == 'Tue' ) {
+    echo 'Martes';
+} else if ( $diaDeLaSemana == 'Wed' ) {
+    echo 'Miércoles';
+} else if ( $diaDeLaSemana == 'Thu' ) {
+    echo 'Jueves';
+} else if ( $diaDeLaSemana == 'Fri' ) {
+    echo 'Viernes';
+} else if ( $diaDeLaSemana == 'Sat' ) {
+    echo 'Buen fin de semana, es Sábado';
+} else if ( $diaDeLaSemana == 'Sun' ){ 
+    echo 'Buen fin de semana, es Domingo'; 
+} else {
+    echo "Esta mal introducido";
+}
 
-
-
-
-
+$diaDeLaSemana = date('l');
+echo "<br>".$diaDeLaSemana."<br>";
 
 ?>
