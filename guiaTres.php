@@ -90,6 +90,22 @@ echo "<br><br><br>";
 echo "Ejercicio 4<br><br>";
 echo "<br>";
 
+$arreglin = [1=>"first value","1"=>"second value",1.2=>"tirth value",true=>"fourth value",1+0.2=>"fifth value",false !== null => "sixth value"];
+
+var_dump($arreglin);
+
+
+$arreglin = 1;
+
+echo $arreglin;
+
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+echo "<br><br><br>";
+echo "Ejercicio 5<br><br>";
+echo "<br>";
+
+
 
 
 
