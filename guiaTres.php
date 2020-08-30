@@ -183,4 +183,74 @@ if ( $diaDeLaSemana == 'Mon' ) {
 $diaDeLaSemana = date('l');
 echo "<br>".$diaDeLaSemana."<br>";
 
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+echo "<br><br><br>";
+echo "Ejercicio 7<br><br>";
+echo "<br>";
+echo "<br>";
+
+$total_sale = 150;
+$type_sale = "mascotas";
+
+if($total_sale <= 200){
+    if($type_sale == "mascotas"){
+        echo "No se puede realizar el envio";
+    }else if($type_sale == "ropa"){
+        echo "Los gastos de envio son 80 pesos";
+    }
+}else if(200 < $total_sale && $total_sale <= 600){
+    echo "Los gastos de envio son 80 pesos";
+}else if($total_sale > 600){
+    echo "Los gastos de envio son gratis<br>";
+}    
+if($total_sale >= 2000){
+    echo "Descuento especial: CODEDES33";
+}
+
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+echo "<br><br><br>";
+echo "Ejercicio 8<br><br>";
+echo "<br>";
+echo "<br>";
+
+$a = 3;
+$b = 1;
+$c = 420;
+$d = 10;
+
+if(($a >= $b) && ($a >= $c) && ($a >= $d)){
+    echo "El mayor de los 4 es $a";
+}else if(($b >= $a) && ($b >= $c) &&($b >= $d)){
+    echo "El mayor de los 4 es $b";
+}else if(($c >= $a) && ($c >= $b) && ($c >= $d)){
+    echo "El mayor de los 4 es $c";
+}else if(($d > $a) && ($d > $b) && ($d > $c)){
+    echo "El mayor de los 4 es $d";
+}
+
+$arreglin = array($a,$b,$c,$d);
+
+/* var_dump($arreglin); */
+
+sort($arreglin);
+
+/* var_dump($arreglin); */
+
+echo "El mayor de todos es : ".$arreglin[array_key_last ($arreglin)];
+
+
+$arreglin = array($a,$b,$c,$d);
+sort($arreglin);
+echo "El mayor de todos es : ".$arreglin[array_key_last ($arreglin)];
+
+
+
+
+
+
+
+
+
 ?>
