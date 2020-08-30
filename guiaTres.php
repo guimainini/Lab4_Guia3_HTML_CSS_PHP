@@ -59,12 +59,36 @@ if(1-1){
 echo "<br><br><br>";
 echo "Ejercicio 3<br><br>";
 echo "<br>";
+<<<<<<< HEAD
 
+=======
+>>>>>>> guille
 
+/* $primerNumero = 4;
+$segundoNumero = 5; */
 
+function multiplicar($primerNumero,$segundoNumero){
+    return $total = $primerNumero * $segundoNumero;
+}
 
+echo "El resultado de la multiplicacion es : ".multiplicar(4, 5)."<br>";
 
+function dividir($primerNumero,$segundoNumero){
+    if($segundoNumero == 0){
+        echo "No se puede dividir por 0<br>";
+    }else{
+        return $total = $primerNumero / $segundoNumero;
+    }
+}
+echo "El resultado de la divicion es : ".dividir(7,3)."<br>";
+echo "El resultado de la divicion es : ".dividir(0,3)."<br>";
+echo "El resultado de la divicion es : ".dividir(3,0)."<br>";
 
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+echo "<br><br><br>";
+echo "Ejercicio 4<br><br>";
+echo "<br>";
 
 
 
