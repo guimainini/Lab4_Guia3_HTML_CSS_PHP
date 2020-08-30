@@ -59,10 +59,7 @@ if(1-1){
 echo "<br><br><br>";
 echo "Ejercicio 3<br><br>";
 echo "<br>";
-<<<<<<< HEAD
 
-=======
->>>>>>> guille
 
 /* $primerNumero = 4;
 $segundoNumero = 5; */
@@ -103,6 +100,8 @@ echo $arreglin;
 ///////////////////////////////////////////////////////
 echo "<br><br><br>";
 echo "Ejercicio 5<br><br>";
+echo "<br>";
+
 echo "<br>";
 
 
